@@ -5,6 +5,112 @@ body {
     background-color: #f9f9f9;
 }
 
+
+/* ====== HEADER ====== */
+.header {
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 20px;
+    color: #146b55;
+    font-weight: 600;
+    margin: 0;
+}
+
+.nav-link {
+    color: #333;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #146b55;
+}
+
+/* ====== FOOTER BOTTOM ====== */
+.footer {
+    background-color: #146b55;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+    margin-top: 40px;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.footer p {
+    margin: 0;
+    letter-spacing: 0.3px;
+}
+
+
+/* ====== HERO SECTION ====== */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 320px;
+    background:
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.6) 80%, rgba(255, 255, 255, 0) 100%),
+        url("/assets/images/background.jpeg") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-overlay {
+    position: relative;
+    text-align: center;
+    z-index: 1;
+}
+
+.hero-title {
+    font-size: 2.4rem;
+    color: #146b55;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    color: #146b55;
+    font-weight: 500;
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 768px) {
+    .hero {
+        height: 240px;
+        background:
+            linear-gradient(to bottom, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.7) 40%, rgba(255, 255, 255, 0) 100%),
+            url("/assets/images/background.jpeg") center/cover no-repeat;
+    }
+
+    .hero-title {
+        font-size: 1.6rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+}
+
+
+/* ====== LAYOUT DASAR ====== */
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -12,6 +118,7 @@ body {
     gap: 20px;
 }
 
+/* ====== PANEL PETUNJUK ====== */
 .petunjuk {
     flex: 1;
     min-width: 260px;
@@ -41,6 +148,7 @@ body {
     line-height: 1.6;
 }
 
+/* ====== PETA ====== */
 .map-container {
     flex: 3;
     position: relative;
@@ -70,6 +178,7 @@ body {
     cursor: pointer;
 }
 
+/* ====== LEGENDA ====== */
 .legend {
     position: absolute;
     bottom: 20px;
@@ -98,4 +207,98 @@ body {
 .icon {
     color: #146b55;
     margin: 0 4px;
+}
+
+/* ====== RESPONSIVE DESIGN ====== */
+
+/* 🖥️ Laptop / Desktop sedang */
+@media (max-width: 1200px) {
+    .container {
+        margin: 15px;
+        gap: 15px;
+    }
+
+    #map {
+        height: 75vh;
+    }
+}
+
+/* 💻 Tablet (<= 992px) */
+@media (max-width: 992px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .petunjuk {
+        max-width: 100%;
+    }
+
+    .map-container {
+        width: 100%;
+    }
+
+    #map {
+        height: 70vh;
+    }
+
+    .legend {
+        font-size: 12px;
+        bottom: 15px;
+        left: 10px;
+        padding: 8px;
+    }
+}
+
+/* 📱 Smartphone (<= 600px) */
+@media (max-width: 600px) {
+    body {
+        background-color: #ffffff;
+    }
+
+    .container {
+        margin: 10px;
+    }
+
+    .petunjuk {
+        box-shadow: none;
+        border: 1px solid #ddd;
+    }
+
+    .petunjuk h4 {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .petunjuk .isi {
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    .map-container {
+        border-radius: 6px;
+        box-shadow: none;
+    }
+
+    #map {
+        height: 60vh;
+    }
+
+    #fly {
+        top: 10px;
+        left: 10px;
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+
+    .legend {
+        bottom: 10px;
+        left: 10px;
+        font-size: 11px;
+        padding: 6px 8px;
+    }
+
+    .legend span {
+        width: 10px;
+        height: 10px;
+    }
 }
