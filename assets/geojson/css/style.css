@@ -63,7 +63,7 @@ body {
     height: 320px;
     background:
         linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.6) 80%, rgba(255, 255, 255, 0) 100%),
-        url("assets/geojson/images/background.jpeg") center/cover no-repeat;
+        url("https://acintyasasikirana.github.io/WebGIS-UGGP/assets/geojson/images/background.jpeg") center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -93,7 +93,7 @@ body {
         height: 240px;
         background:
             linear-gradient(to bottom, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.7) 40%, rgba(255, 255, 255, 0) 100%),
-            url("assets/geojson/images/background.jpeg") center/cover no-repeat;
+            url("https://acintyasasikirana.github.io/WebGIS-UGGP/assets/geojson/images/background.jpeg") center/cover no-repeat;
     }
 
     .hero-title {
@@ -290,5 +290,6 @@ body {
         height: 10px;
     }
 }
+
 
 
