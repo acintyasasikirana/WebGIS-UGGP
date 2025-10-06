@@ -6,7 +6,6 @@ body {
 }
 
 
-/* ====== HEADER ====== */
 .header {
     background-color: #ffffff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -42,7 +41,6 @@ body {
     color: #146b55;
 }
 
-/* ====== FOOTER BOTTOM ====== */
 .footer {
     background-color: #146b55;
     color: #ffffff;
@@ -59,14 +57,13 @@ body {
 }
 
 
-/* ====== HERO SECTION ====== */
 .hero {
     position: relative;
     width: 100%;
     height: 320px;
     background:
         linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.6) 80%, rgba(255, 255, 255, 0) 100%),
-        url("/assets/geojson/images/background.jpeg") center/cover no-repeat;
+        url("assets/geojson/images/background.jpeg") center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -91,13 +88,12 @@ body {
     font-weight: 500;
 }
 
-/* ====== RESPONSIVE ====== */
 @media (max-width: 768px) {
     .hero {
         height: 240px;
         background:
             linear-gradient(to bottom, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.7) 40%, rgba(255, 255, 255, 0) 100%),
-            url("/assets/geojson/images/background.jpeg") center/cover no-repeat;
+            url("assets/geojson/images/background.jpeg") center/cover no-repeat;
     }
 
     .hero-title {
@@ -110,7 +106,6 @@ body {
 }
 
 
-/* ====== LAYOUT DASAR ====== */
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -118,7 +113,6 @@ body {
     gap: 20px;
 }
 
-/* ====== PANEL PETUNJUK ====== */
 .petunjuk {
     flex: 1;
     min-width: 260px;
@@ -148,7 +142,6 @@ body {
     line-height: 1.6;
 }
 
-/* ====== PETA ====== */
 .map-container {
     flex: 3;
     position: relative;
@@ -178,7 +171,6 @@ body {
     cursor: pointer;
 }
 
-/* ====== LEGENDA ====== */
 .legend {
     position: absolute;
     bottom: 20px;
@@ -209,9 +201,7 @@ body {
     margin: 0 4px;
 }
 
-/* ====== RESPONSIVE DESIGN ====== */
 
-/* 🖥️ Laptop / Desktop sedang */
 @media (max-width: 1200px) {
     .container {
         margin: 15px;
@@ -223,7 +213,6 @@ body {
     }
 }
 
-/* 💻 Tablet (<= 992px) */
 @media (max-width: 992px) {
     .container {
         flex-direction: column;
@@ -249,7 +238,6 @@ body {
     }
 }
 
-/* 📱 Smartphone (<= 600px) */
 @media (max-width: 600px) {
     body {
         background-color: #ffffff;
@@ -302,4 +290,5 @@ body {
         height: 10px;
     }
 }
+
 
